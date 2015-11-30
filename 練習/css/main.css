@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*float解除*/
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background: #F7FAD5;
+}
+.wrapper {
+    width: 100%;
+
+    position: relative;
+}
+
+
+.menu_btn {
+    display: block;
+    position: relative;
+
+}
+.menu_btn > li{
+    display: block;
+    position: absolute;
+    top: -150px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    color: #fff;
+    text-align: center;
+}
+
+.menu_btn > li:first-child {
+    left: 200px;
+    background: red;
+}
+.menu_btn > li:nth-child(2) {
+    left: 500px;
+    background: blue;
+}
+.menu_btn > li:last-child {
+    left: 800px;
+    background: green;
+}
+
+
+
